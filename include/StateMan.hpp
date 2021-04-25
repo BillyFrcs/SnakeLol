@@ -1,7 +1,6 @@
 #pragma once
 #include <memory>
 #include <stack>
-
 #include <State.hpp>
 
 namespace Engine
@@ -23,4 +22,4 @@ namespace Engine
           void processStateChange();
           std::unique_ptr<State> &getCurrent();
      };
-}
+} //Namespace Engine
