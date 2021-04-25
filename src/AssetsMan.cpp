@@ -8,7 +8,8 @@ Engine::AssetsMan::~AssetsMan()
 {
 }
 
-void Engine::AssetsMan::addTexture(int Id, const std::string &filePath, bool wantRepeated = false)
+//Texture
+void Engine::AssetsMan::addTexture(int Id, const std::string &filePath, bool wantRepeated)
 {
      auto texture = std::make_unique<sf::Texture>();
 
@@ -19,6 +20,7 @@ void Engine::AssetsMan::addTexture(int Id, const std::string &filePath, bool wan
      }
 };
 
+//Font
 void Engine::AssetsMan::addFont(int Id, const std::string &filePath)
 {
      auto font = std::make_unique<sf::Font>();
