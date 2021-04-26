@@ -1,6 +1,6 @@
 #include "StateMan.hpp"
 
-Engine::StateMan::StateMan() : mAdd(false), mReplace(false), mRemove(false)
+Engine::StateMan::StateMan() : mAdd(), mReplace(), mRemove()
 {
 }
 

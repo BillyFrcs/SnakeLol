@@ -1,4 +1,5 @@
 #pragma once
+
 #include <SFML/Graphics/Font.hpp>
 #include <SFML/Graphics/Texture.hpp>
 #include <map>

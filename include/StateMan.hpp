@@ -11,7 +11,7 @@ namespace Engine
           std::stack<std::unique_ptr<State>> mStateStack;
           std::unique_ptr<State> mNewState;
 
-          bool mAdd, mReplace, mRemove;
+          bool mAdd = false, mReplace = false, mRemove = false;
 
      public:
           StateMan();

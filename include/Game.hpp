@@ -5,6 +5,11 @@
 #include "AssetsMan.hpp"
 #include "StateMan.hpp"
 
+enum AssetsID
+{
+    MAIN_FONT = 0
+};
+
 struct Context
 {
     std::unique_ptr<Engine::AssetsMan> mAssets;
