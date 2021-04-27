@@ -1,4 +1,5 @@
 #pragma once
+
 #include <memory>
 #include <stack>
 #include <State.hpp>
