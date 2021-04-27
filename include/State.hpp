@@ -15,7 +15,7 @@ namespace Engine
           virtual void Draw() = 0;
 
           //Method
-          void Pause(){};
-          void Start(){};
+          virtual void Pause(){};
+          virtual void Start(){};
      };
 } //Namespace Engine

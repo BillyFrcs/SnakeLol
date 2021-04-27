@@ -1,12 +1,12 @@
-#include "Game.hpp"
 #include <SFML/Graphics/CircleShape.hpp>
 #include <SFML/Window/Event.hpp>
 
+#include "Game.hpp"
 #include "MainMenu.hpp"
 
 Game::Game() : mContext(std::make_shared<Context>())
 {
-     mContext->mWindow->create(sf::VideoMode(600, 400), "Snake 2D", sf::Style::Close);
+     mContext->mWindow->create(sf::VideoMode(700, 400), "Snake 2D", sf::Style::Close);
      //Add the first state to mState here
      mContext->mStates->Add(std::make_unique<MainMenu>(mContext));
 }

@@ -1,4 +1,5 @@
 #pragma once
+
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <memory>
 
@@ -7,7 +8,11 @@
 
 enum AssetsID
 {
-    MAIN_FONT = 0
+    MAIN_FONT = 0,
+    GRASS,
+    FOOD,
+    WALL,
+    SNAKE
 };
 
 struct Context

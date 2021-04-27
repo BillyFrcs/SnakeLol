@@ -1,4 +1,5 @@
 #include "MainMenu.hpp"
+#include "GamePlay.hpp"
 
 #include <SFML/Window/Event.hpp>
 
@@ -46,7 +47,7 @@ void MainMenu::ProcessInput()
                mContext->mWindow->close();
           }
 
-          if (event.type == sf::Event::KeyPressed)
+          else if (event.type == sf::Event::KeyPressed)
           {
                switch (event.key.code)
                {
@@ -98,22 +99,23 @@ void MainMenu::Update(sf::Time deltaTime)
 {
      if (playButtonSelected)
      {
-          mGamePlayButton.setFillColor(sf::Color::Magenta);
+          mGamePlayButton.setFillColor(sf::Color::Black);
           mGameExitButton.setFillColor(sf::Color::White);
      }
 
      else
      {
-          mGameExitButton.setFillColor(sf::Color::Magenta);
+          mGameExitButton.setFillColor(sf::Color::Black);
           mGamePlayButton.setFillColor(sf::Color::White);
      }
 
      if (playButtonPressed)
      {
           //Play state
+          mContext->mStates->Add(std::make_unique<GamePlay>(mContext), true);
      }
 
-     if (exitButtonPressed)
+     else if (exitButtonPressed)
      {
           mContext->mWindow->close();
      }
