@@ -5,6 +5,7 @@
 
 #include "Game.hpp"
 #include "State.hpp"
+#include "Snake.hpp"
 
 #include <array>
 #include <memory>
@@ -18,6 +19,10 @@ private:
     std::array<sf::Sprite, 4> mWalls;
 
     //Added snake
+    Snake mSnake;
+
+    sf::Vector2f mSnakeDirection;
+    sf::Time mElapsedTime;
 
 public:
     GamePlay(std::shared_ptr<Context> &mContext);

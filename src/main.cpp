@@ -1,6 +1,6 @@
 #include "Game.hpp"
 
-int main()
+int main(int, char**)
 {
     Game *game = new Game();
 
