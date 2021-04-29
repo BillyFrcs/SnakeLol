@@ -21,19 +21,25 @@ private:
     //Added snake
     Snake mSnake;
 
+    //Add score
+    sf::Text mScoreText;
+    int mScore;
+
     sf::Vector2f mSnakeDirection;
     sf::Time mElapsedTime;
+
+    bool isPaused;
 
 public:
     GamePlay(std::shared_ptr<Context> &mContext);
     ~GamePlay();
 
-    virtual void Init() override;
-    virtual void ProcessInput() override;
-    virtual void Update(sf::Time deltaTime) override;
-    virtual void Draw() override;
+    void Init() override;
+    void ProcessInput() override;
+    void Update(sf::Time deltaTime) override;
+    void Draw() override;
 
     //Method
-    virtual void Pause() override;
-    virtual void Start() override;
+    void Pause() override;
+    void Start() override;
 };

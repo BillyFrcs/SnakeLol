@@ -19,11 +19,11 @@ public:
     ~Snake();
 
     //Method
-    virtual void Init(const sf::Texture &texture);
-    virtual void Move(const sf::Vector2f &direction);
+    void Init(const sf::Texture &texture);
+    void Move(const sf::Vector2f &direction);
     bool isOn(const sf::Sprite &other) const;
     bool selfIntersecting() const;
-    virtual void Grow(const sf::Vector2f &direction);
+    void Grow(const sf::Vector2f &direction);
 
-    virtual void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
+    void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
 };

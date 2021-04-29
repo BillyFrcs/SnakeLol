@@ -38,6 +38,26 @@ bool Snake::isOn(const sf::Sprite &other) const
      return other.getGlobalBounds().intersects(mHead->getGlobalBounds());
 }
 
+bool Snake::selfIntersecting() const
+{
+     bool Flag = false;
+
+     for (auto piece = mBody.begin(); piece != mBody.end(); piece++)
+     {
+          if (mHead != piece)
+          {
+               Flag = isOn(*piece);
+
+               if (Flag)
+               {
+                    break;
+               }
+          }
+     }
+
+     return Flag;
+}
+
 void Snake::Grow(const sf::Vector2f &direction)
 {
      sf::Sprite newPiece;

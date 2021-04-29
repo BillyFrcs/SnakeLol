@@ -19,8 +19,8 @@ public:
     MainMenu(std::shared_ptr<Context> &context);
     ~MainMenu();
 
-    virtual void Init() override;
-    virtual void ProcessInput() override;
-    virtual void Update(sf::Time deltaTime) override;
-    virtual void Draw() override; //Same as zero
+    void Init() override;
+    void ProcessInput() override;
+    void Update(sf::Time deltaTime) override;
+    void Draw() override; //Same as zero
 };

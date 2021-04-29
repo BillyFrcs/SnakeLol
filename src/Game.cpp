@@ -5,7 +5,7 @@
 
 Game::Game() : mContext(std::make_shared<Context>())
 {
-     mContext->mWindow->create(sf::VideoMode(700, 500), "Snake 2D", sf::Style::Close);
+     mContext->mWindow->create(sf::VideoMode(700, 400), "Snake Game", sf::Style::Close);
      //Add the first state to mState here
      mContext->mStates->Add(std::make_unique<MainMenu>(mContext));
 }
@@ -18,7 +18,7 @@ Game::~Game()
 void Game::Run()
 {
      sf::CircleShape shape(100.f);
-     shape.setFillColor(sf::Color::Blue);
+     shape.setFillColor(sf::Color::Magenta);
 
      sf::Clock clock;
      sf::Time timeSinceLastFrame = sf::Time::Zero;
