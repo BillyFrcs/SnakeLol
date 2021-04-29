@@ -1,6 +1,6 @@
 # Snake Game
 
-Simple Snake 2D game with C++/SFML standard library, running on Linux Zorin OS based on Ubuntu.
+Simple 2D snake game with C++/SFML standard library, running on Linux Zorin OS based on Ubuntu.
 
 ### How to run and playing Snake game ?
 
