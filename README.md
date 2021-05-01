@@ -9,5 +9,6 @@ Simple 2D snake game with C++/SFML standard library, running on Linux Zorin OS b
 > - Second type "bin/main" that's it.
 > - Make sure to already installed SFML on system, follow the instruction from here https://www.sfml-dev.org/tutorials/2.5/start-linux.php
 > - Press key right, left, up, and down to move the snake and press esc to pause the game.
+> - You can also use W, A, S, D to move the snake.
 
 <i>© Billy Franscois</i>
