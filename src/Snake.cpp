@@ -1,6 +1,6 @@
 #include "Snake.hpp"
 
-Snake::Snake() : mBody(std::list<sf::Sprite>(4))
+Snake::Snake() : mBody(std::list<sf::Sprite>(1))
 {
      mHead = --mBody.end();
      mTail = mBody.begin();
@@ -25,7 +25,7 @@ void Snake::Move(const sf::Vector2f &direction)
 {
      mTail->setPosition(mHead->getPosition() + direction);
      mHead = mTail;
-     ++mTail;
+     mTail++;
 
      if (mTail == mBody.end())
      {

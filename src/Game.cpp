@@ -29,7 +29,7 @@ void Game::Run()
 
           while (timeSinceLastFrame > TIME_PER_FRAME)
           {
-               timeSinceLastFrame -= TIME_PER_FRAME;
+               (timeSinceLastFrame -= TIME_PER_FRAME);
 
                //Tasks
                mContext->mStates->processStateChange();

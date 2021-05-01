@@ -18,12 +18,12 @@ GamePlay::~GamePlay()
 void GamePlay::Init()
 {
      //Load assets
-     mContext->mAssets->addTexture(GRASS, "assets/textures/background.png", true);
-     mContext->mAssets->addTexture(FOOD, "assets/textures/food.png");
-     mContext->mAssets->addTexture(WALL, "assets/textures/wall.png", true);
-     mContext->mAssets->addTexture(SNAKE, "assets/textures/snake.png");
+     mContext->mAssets->addTexture(GRASS, "assets/textures/grass/background_green.png", true);
+     mContext->mAssets->addTexture(FOOD, "assets/textures/food/food.png");
+     mContext->mAssets->addTexture(WALL, "assets/textures/wall/wall.png", true);
+     mContext->mAssets->addTexture(SNAKE, "assets/textures/snake/snake.png");
 
-     //Grass
+     //Background grass
      mGrass.setTexture(mContext->mAssets->getTexture(GRASS));
      mGrass.setTextureRect(mContext->mWindow->getViewport(mContext->mWindow->getDefaultView()));
 
@@ -52,8 +52,8 @@ void GamePlay::Init()
 
      //Score text
      mScoreText.setFont(mContext->mAssets->getFont(MAIN_FONT));
-     mScoreText.setString("Score Game: " + std::to_string(mScore));
-     mScoreText.setCharacterSize(15);
+     mScoreText.setString("Score Game " + std::to_string(mScore));
+     mScoreText.setCharacterSize(16);
 }
 
 void GamePlay::ProcessInput()
@@ -86,6 +86,22 @@ void GamePlay::ProcessInput()
                     break;
 
                case sf::Keyboard::Right:
+                    newDirection = {16.f, 0.f};
+                    break;
+
+               case sf::Keyboard::W:
+                    newDirection = {0.f, -16.f};
+                    break;
+
+               case sf::Keyboard::A:
+                    newDirection = {-16.f, 0.f};
+                    break;
+
+               case sf::Keyboard::S:
+                    newDirection = {0.f, 16.f};
+                    break;
+
+               case sf::Keyboard::D:
                     newDirection = {16.f, 0.f};
                     break;
 

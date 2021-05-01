@@ -17,7 +17,7 @@ void MainMenu::Init()
 
      //Game title
      mGameTitle.setFont(mContext->mAssets->getFont(MAIN_FONT));
-     mGameTitle.setString("Snake 2D");
+     mGameTitle.setString("2D Snake Game");
      mGameTitle.setOrigin(mGameTitle.getLocalBounds().width / 2, mGameTitle.getLocalBounds().height / 2);
      mGameTitle.setPosition(mContext->mWindow->getSize().x / 2, mContext->mWindow->getSize().y / 2 - 150.f);
 
@@ -26,14 +26,14 @@ void MainMenu::Init()
      mGamePlayButton.setString("Play");
      mGamePlayButton.setOrigin(mGameTitle.getLocalBounds().width / 2, mGameTitle.getLocalBounds().height / 2);
      mGamePlayButton.setPosition(mContext->mWindow->getSize().x / 2, mContext->mWindow->getSize().y / 2 - 30.f);
-     mGamePlayButton.setCharacterSize(20);
+     mGamePlayButton.setCharacterSize(40);
 
      //Exit game button
      mGameExitButton.setFont(mContext->mAssets->getFont(MAIN_FONT));
      mGameExitButton.setString("Exit");
      mGameExitButton.setOrigin(mGameTitle.getLocalBounds().width / 2, mGameTitle.getLocalBounds().height / 2);
      mGameExitButton.setPosition(mContext->mWindow->getSize().x / 2, mContext->mWindow->getSize().y / 2 + 20.f);
-     mGameExitButton.setCharacterSize(20);
+     mGameExitButton.setCharacterSize(40);
 }
 
 void MainMenu::ProcessInput()
