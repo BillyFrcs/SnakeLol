@@ -1,10 +1,8 @@
-#include "Game.hpp"
+#include "main.hpp"
 
-int main(int, char**)
+int main()
 {
-    Game *game = new Game();
-
-    game->Run();
+    RunGame();
 
     return 0;
 }

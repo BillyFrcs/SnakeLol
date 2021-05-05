@@ -50,9 +50,9 @@ void GamePlay::Init()
      //Snake
      mSnake.Init(mContext->mAssets->getTexture(SNAKE));
 
-     //Score text
+     //Score 
      mScoreText.setFont(mContext->mAssets->getFont(MAIN_FONT));
-     mScoreText.setString("Score Game " + std::to_string(mScore));
+     mScoreText.setString(("Score Game ") + (mScore));
      mScoreText.setCharacterSize(16);
 }
 
@@ -151,9 +151,9 @@ void GamePlay::Update(sf::Time deltaTime)
 
                     mFood.setPosition(x, y);
 
-                    //Increase the score
-                    mScore++;
-                    mScoreText.setString("Score Game: " + std::to_string(mScore));
+                    //Increase and show the score
+                    mScore += 5;
+                    mScoreText.setString("Score Snake: " + std::to_string(mScore));
                }
 
                else

@@ -1,6 +1,6 @@
 #include "Snake.hpp"
 
-Snake::Snake() : mBody(std::list<sf::Sprite>(1))
+Snake::Snake() : mBody(std::list<sf::Sprite>(2))
 {
      mHead = --mBody.end();
      mTail = mBody.begin();

@@ -26,14 +26,14 @@ void GameOver::Init()
      mGameRetryButton.setString("Retry");
      mGameRetryButton.setOrigin(mGameOverTitle.getLocalBounds().width / 2, mGameOverTitle.getLocalBounds().height / 2);
      mGameRetryButton.setPosition(mContext->mWindow->getSize().x / 2, mContext->mWindow->getSize().y / 2 - 30.f);
-     mGameRetryButton.setCharacterSize(20);
+     mGameRetryButton.setCharacterSize(40);
 
      //Exit game
      mGameExitButton.setFont(mContext->mAssets->getFont(MAIN_FONT));
      mGameExitButton.setString("Exit");
      mGameExitButton.setOrigin(mGameOverTitle.getLocalBounds().width / 2, mGameOverTitle.getLocalBounds().height / 2);
      mGameExitButton.setPosition(mContext->mWindow->getSize().x / 2, mContext->mWindow->getSize().y / 2 + 20.f);
-     mGameExitButton.setCharacterSize(20);
+     mGameExitButton.setCharacterSize(40);
 }
 
 void GameOver::ProcessInput()
