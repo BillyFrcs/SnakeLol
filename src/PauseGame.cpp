@@ -1,6 +1,6 @@
-#include "PauseGame.hpp"
-
 #include <SFML/Window/Event.hpp>
+
+#include "PauseGame.hpp"
 
 PauseGame::PauseGame(std::shared_ptr<Context> &context) : mContext(context)
 {

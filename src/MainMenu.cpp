@@ -1,7 +1,7 @@
+#include <SFML/Window/Event.hpp>
+
 #include "MainMenu.hpp"
 #include "GamePlay.hpp"
-
-#include <SFML/Window/Event.hpp>
 
 MainMenu::MainMenu(std::shared_ptr<Context> &context) : mContext(context), playButtonSelected(), playButtonPressed(), exitButtonSelected(), exitButtonPressed()
 {

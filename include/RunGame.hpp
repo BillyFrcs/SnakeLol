@@ -2,7 +2,7 @@
 
 #include "Game.hpp"
 
-void RunGame()
+void runSnakeGame()
 {
      Game *game = new Game();
 

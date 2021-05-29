@@ -65,7 +65,7 @@ void Snake::Grow(const sf::Vector2f &direction)
      newPiece.setTexture(*(mBody.begin()->getTexture()));
      newPiece.setPosition(mHead->getPosition() + direction);
 
-     mHead = mBody.insert(++mHead, newPiece);
+     mHead = mBody.insert(mHead++, newPiece);
 }
 
 void Snake::draw(sf::RenderTarget &target, sf::RenderStates states) const

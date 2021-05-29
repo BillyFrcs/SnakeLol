@@ -3,12 +3,12 @@
 #include <SFML/Graphics/Sprite.hpp>
 #include <SFML/Graphics/Text.hpp>
 
+#include <array>
+#include <memory>
+
 #include "Game.hpp"
 #include "State.hpp"
 #include "Snake.hpp"
-
-#include <array>
-#include <memory>
 
 class GamePlay : public Engine::State
 {

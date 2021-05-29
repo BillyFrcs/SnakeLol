@@ -1,10 +1,10 @@
-#include "GamePlay.hpp"
-#include "GameOver.hpp"
-#include "PauseGame.hpp"
-
 #include <SFML/Window/Event.hpp>
 #include <stdlib.h>
 #include <time.h>
+
+#include "GamePlay.hpp"
+#include "GameOver.hpp"
+#include "PauseGame.hpp"
 
 GamePlay::GamePlay(std::shared_ptr<Context> &context) : mContext(context), mSnakeDirection({16.f, 0.f}), mElapsedTime(sf::Time::Zero), mScore(0), isPaused(false)
 {

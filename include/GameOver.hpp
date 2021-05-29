@@ -1,10 +1,10 @@
 #pragma once
 
-#include "Game.hpp"
-#include "State.hpp"
-
 #include <SFML/Graphics/Text.hpp>
 #include <memory>
+
+#include "Game.hpp"
+#include "State.hpp"
 
 class GameOver : public Engine::State
 {

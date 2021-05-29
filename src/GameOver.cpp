@@ -1,7 +1,7 @@
+#include <SFML/Window/Event.hpp>
+
 #include "GameOver.hpp"
 #include "GamePlay.hpp"
-
-#include <SFML/Window/Event.hpp>
 
 GameOver::GameOver(std::shared_ptr<Context> &context) : mContext(context), retryButtonSelected(true), retryButtonPressed(false), exitButtonSelected(false), exitButtonPressed(false)
 {
