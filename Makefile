@@ -6,9 +6,9 @@ SRC		:= src
 INCLUDE	:= include
 LIB		:= lib
 
-#Get the SFML library
+#Get the SFML library and paste here.
 LIBRARIES	:= -lsfml-graphics -lsfml-window -lsfml-system
-EXECUTABLE	:= main
+EXECUTABLE	:= Main
 
 all: $(BIN)/$(EXECUTABLE)
 
