@@ -97,6 +97,8 @@ void GameOver::ProcessInput()
 
 void GameOver::Update(sf::Time deltaTime)
 {
+     deltaTime.asMilliseconds();
+
      if (retryButtonSelected)
      {
           mGameRetryButton.setFillColor(sf::Color::Black);

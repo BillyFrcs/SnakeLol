@@ -51,6 +51,7 @@ void PauseGame::ProcessInput()
 
 void PauseGame::Update(sf::Time deltaTime)
 {
+     deltaTime.asMilliseconds();
 }
 
 void PauseGame::Draw()

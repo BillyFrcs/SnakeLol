@@ -25,5 +25,5 @@ public:
     bool selfIntersecting() const;
     void Grow(const sf::Vector2f &direction);
 
-    void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
+    void draw(sf::RenderTarget &target, sf::RenderStates states) const;
 };

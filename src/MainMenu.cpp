@@ -97,6 +97,7 @@ void MainMenu::ProcessInput()
 
 void MainMenu::Update(sf::Time deltaTime)
 {
+     deltaTime.asMilliseconds();
      if (playButtonSelected)
      {
           mGamePlayButton.setFillColor(sf::Color::Black);

@@ -72,6 +72,6 @@ void Snake::draw(sf::RenderTarget &target, sf::RenderStates states) const
 {
      for (auto &piece : mBody)
      {
-          target.draw(piece);
+          target.draw(piece, states);
      }
 }

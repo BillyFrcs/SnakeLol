@@ -31,7 +31,7 @@ private:
     bool isPaused;
 
 public:
-    GamePlay(std::shared_ptr<Context> &mContext);
+    GamePlay(std::shared_ptr<Context> mContext);
     ~GamePlay();
 
     void Init() override;
