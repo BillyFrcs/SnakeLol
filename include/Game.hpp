@@ -39,5 +39,5 @@ public:
     Game();
     ~Game();
 
-    void Run();
+    void runGame();
 };
