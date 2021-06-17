@@ -6,5 +6,5 @@ void runSnakeGame()
 {
      Game *game = new Game();
 
-     game->Run();
+     game->runGame();
 }
