@@ -1,6 +1,7 @@
 #include "Snake.hpp"
+#define SNAKE 2
 
-Snake::Snake() : mBody(std::list<sf::Sprite>(2))
+Snake::Snake() : mBody(std::list<sf::Sprite>(SNAKE))
 {
      mHead = --mBody.end();
      mTail = mBody.begin();
@@ -12,20 +13,20 @@ Snake::~Snake()
 
 void Snake::Init(const sf::Texture &texture)
 {
-     float x = 16.f;
+     float value = 16.f;
      for (auto &piece : mBody)
      {
           piece.setTexture(texture);
-          piece.setPosition({x, 16.f});
-          x += 16.f;
+          piece.setPosition({value, 16.f});
+          value += 16.f;
      }
 }
 
 void Snake::Move(const sf::Vector2f &direction)
 {
      mTail->setPosition(mHead->getPosition() + direction);
-     mHead = mTail;
-     mTail++;
+     mHead = mTail++;
+     //mTail++;
 
      if (mTail == mBody.end())
      {
@@ -40,22 +41,22 @@ bool Snake::isOn(const sf::Sprite &other) const
 
 bool Snake::selfIntersecting() const
 {
-     bool Flag = false;
+     bool flag = true;
 
      for (auto piece = mBody.begin(); piece != mBody.end(); piece++)
      {
           if (mHead != piece)
           {
-               Flag = isOn(*piece);
+               flag = isOn(*piece);
 
-               if (Flag)
+               if (flag)
                {
                     break;
                }
           }
      }
 
-     return Flag;
+     return flag;
 }
 
 void Snake::Grow(const sf::Vector2f &direction)
