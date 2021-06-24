@@ -9,6 +9,7 @@
 enum AssetsID
 {
     MAIN_FONT = 0,
+    SCORE_FONT = 0,
     GRASS,
     FOOD,
     WALL,

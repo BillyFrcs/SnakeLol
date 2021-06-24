@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-#include "GamePlay.hpp"
 #include "GameOver.hpp"
+#include "GamePlay.hpp"
 #include "PauseGame.hpp"
 
 GamePlay::GamePlay(std::shared_ptr<Context> context) : mContext(context), mSnakeDirection(16.f, 0.f), mElapsedTime(sf::Time::Zero), isPaused(false)
@@ -51,9 +51,10 @@ void GamePlay::Init()
      //Snake
      mSnake.Init(mContext->mAssets->getTexture(SNAKE));
 
-     //Score 
-     mScoreText.setFont(mContext->mAssets->getFont(MAIN_FONT));
-     mScoreText.setString(("Score Game ") + (mScore));
+     //Score
+     mContext->mAssets->addFont(SCORE_FONT, "assets/fonts/Roboto-Bold.ttf");
+     mScoreText.setFont(mContext->mAssets->getFont(SCORE_FONT));
+     mScoreText.setString(("   Score Game") + (mScore));
      mScoreText.setCharacterSize(16);
 }
 
@@ -154,7 +155,8 @@ void GamePlay::Update(sf::Time deltaTime)
 
                     //Increase and show the score
                     mScore += 5;
-                    mScoreText.setString("Score Snake: " + std::to_string(mScore));
+
+                    mScoreText.setString("   Score Snake: " + std::to_string(mScore));
                }
 
                else
