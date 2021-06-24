@@ -39,24 +39,24 @@ bool Snake::isOn(const sf::Sprite &other) const
      return other.getGlobalBounds().intersects(mHead->getGlobalBounds());
 }
 
-bool Snake::selfIntersecting() const
+bool Snake::isSelfIntersecting(bool &isFlag) const
 {
-     bool flag = true;
+     isFlag = true;
 
      for (auto piece = mBody.begin(); piece != mBody.end(); piece++)
      {
           if (mHead != piece)
           {
-               flag = isOn(*piece);
+               isFlag = isOn(*piece);
 
-               if (flag)
+               if (isFlag)
                {
                     break;
                }
           }
      }
 
-     return flag;
+     return isFlag;
 }
 
 void Snake::Grow(const sf::Vector2f &direction)

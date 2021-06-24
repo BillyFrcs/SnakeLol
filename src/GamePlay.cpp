@@ -126,6 +126,8 @@ void GamePlay::ProcessInput()
 
 void GamePlay::Update(sf::Time deltaTime)
 {
+     bool isFlag = true;
+
      if (!isPaused)
      {
           (mElapsedTime += deltaTime);
@@ -164,7 +166,7 @@ void GamePlay::Update(sf::Time deltaTime)
                     mSnake.Move(mSnakeDirection);
                }
 
-               if (mSnake.selfIntersecting())
+               if (mSnake.isSelfIntersecting(isFlag))
                {
                     mContext->mStates->Add(std::make_unique<GameOver>(mContext), true);
                }

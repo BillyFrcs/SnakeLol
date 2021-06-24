@@ -22,7 +22,7 @@ public:
     void Init(const sf::Texture &texture);
     void Move(const sf::Vector2f &direction);
     bool isOn(const sf::Sprite &other) const;
-    bool selfIntersecting() const;
+    bool isSelfIntersecting(bool &isFlag) const;
     void Grow(const sf::Vector2f &direction);
 
     void draw(sf::RenderTarget &target, sf::RenderStates states) const;
