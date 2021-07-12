@@ -28,6 +28,6 @@ sudo apt-get install libsfml-dev
 
 - Press esc to pause the game.
 
-> Note: This game only running on Linux :)
+> Note: This game only available and running on Linux :)
 
 <i>© Billy Franscois</i>
