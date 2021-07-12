@@ -1,5 +1,7 @@
 # Snake Game
 
+![SnakeGame](https://github.com/BillyFrcs/SnakeGame/blob/master/assets/example/SnakeGameSample.png)
+
 Simple 2D snake game with C++/SFML library, running on linux.
 
 ## Getting started
