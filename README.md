@@ -15,7 +15,7 @@ https://github.com/BillyFrcs/SnakeGame.git
 ## Run and play snake game
 
 - Create new terminal on text editor.
-- First type `make` on terminal, second type `bin/SnakeGame` that's it, or you can also click Build & Run.
+- First type `make` on terminal, second type `bin/SnakeGame` that's it, or you can also click Run and Debug (f5).
 - Make sure to already installed SFML on linux system, follow the setup and installation from [here](https://www.sfml-dev.org/tutorials/2.5/start-linux.php).
 
 Copy and paste the syntax below on your terminal to install SFML library if you're using debian or ubuntu based system.
