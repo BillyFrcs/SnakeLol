@@ -4,7 +4,7 @@ CXX_FLAGS := -Wall -Wextra -std=c++17 -ggdb
 BIN		:= bin
 SRC		:= src
 INCLUDE	:= include
-LIB		:= lib
+#LIB		:= lib
 
 #Get the SFML library and paste here.
 LIBRARIES	:= -lsfml-graphics -lsfml-window -lsfml-system
