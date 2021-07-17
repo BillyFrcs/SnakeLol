@@ -1,6 +1,7 @@
 #include <SFML/Window/Event.hpp>
-#include <stdlib.h>
-#include <time.h>
+
+#include <cstdlib>
+#include <ctime>
 
 #include "GameOver.hpp"
 #include "GamePlay.hpp"

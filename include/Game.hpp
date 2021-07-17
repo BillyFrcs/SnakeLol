@@ -1,6 +1,7 @@
 #pragma once
 
 #include <SFML/Graphics/RenderWindow.hpp>
+
 #include <memory>
 
 #include "AssetsMan.hpp"
