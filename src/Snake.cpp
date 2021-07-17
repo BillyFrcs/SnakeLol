@@ -1,4 +1,5 @@
 #include "Snake.hpp"
+
 #define SNAKE 2
 
 Snake::Snake() : mBody(std::list<sf::Sprite>(SNAKE))
