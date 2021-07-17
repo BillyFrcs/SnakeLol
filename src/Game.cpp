@@ -7,7 +7,7 @@ Game::Game() : mContext(std::make_shared<Context>())
 {
      //render the snake game
      mContext->mWindow->create(sf::VideoMode(700, 400), "Snake Game", sf::Style::Close);
-     
+
      //Add the first state to mState here
      mContext->mStates->Add(std::make_unique<MainMenu>(mContext));
 }

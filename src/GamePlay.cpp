@@ -156,7 +156,7 @@ void GamePlay::Update(sf::Time deltaTime)
                     mFood.setPosition(x, y);
 
                     //Increase and show the score
-                    mScore += 5;
+                    mScore++;
 
                     mScoreText.setString("   Score Snake: " + std::to_string(mScore));
                }

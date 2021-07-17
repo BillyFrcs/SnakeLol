@@ -2,6 +2,7 @@
 
 #include <SFML/Graphics/Font.hpp>
 #include <SFML/Graphics/Texture.hpp>
+
 #include <map>
 #include <memory>
 #include <string>
@@ -18,10 +19,10 @@ namespace Engine
         AssetsMan();
         ~AssetsMan();
 
-        void addTexture(int Id, const std::string &filePath, bool wantRepeated = false);
-        void addFont(int Id, const std::string &filePath);
+        void addTexture(int id, const std::string &filePath, bool wantRepeated = false);
+        void addFont(int id, const std::string &filePath);
 
-        const sf::Texture &getTexture(int Id) const;
-        const sf::Font &getFont(int Id) const;
+        const sf::Texture &getTexture(int id) const;
+        const sf::Font &getFont(int id) const;
     };
 } //Namespace Engine

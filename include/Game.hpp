@@ -13,11 +13,12 @@ enum AssetsID
     GRASS,
     FOOD,
     WALL,
-    SNAKE
+    SNAKE,
 };
 
-struct Context
+class Context
 {
+public:
     std::unique_ptr<Engine::AssetsMan> mAssets;
     std::unique_ptr<Engine::StateMan> mStates;
     std::unique_ptr<sf::RenderWindow> mWindow;
