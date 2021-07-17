@@ -1,8 +1,8 @@
-#include "RunGame.hpp"
+#include "SnakeGame.hpp"
 
 int main()
 {
-    runSnakeGame();
+    RunSnakeGame::runSnakeGame();
 
     return 0;
 }
