@@ -2,9 +2,9 @@
 
 #include "Game.hpp"
 
-namespace RunSnakeGame
+namespace SnakeGame
 {
-     void runSnakeGame()
+     void RunSnakeGame()
      {
           Game *game = new Game();
 

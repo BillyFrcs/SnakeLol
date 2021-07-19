@@ -2,7 +2,7 @@
 
 int main()
 {
-    RunSnakeGame::runSnakeGame();
+    SnakeGame::RunSnakeGame();
 
     return EXIT_SUCCESS;
 }
