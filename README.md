@@ -32,6 +32,8 @@ sudo apt-get install libsfml-dev
 
 ## Simple Docs
 
+To see the all the code go to include for .hpp files and src for .cpp files and assets for all the resources of this game.
+
 Just for information, the main cpp file is SnakeGame.cpp is used to create and run the game.
 
 > Note: This game only available and running on Linux :)
