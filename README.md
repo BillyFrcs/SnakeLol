@@ -30,6 +30,10 @@ sudo apt-get install libsfml-dev
 
 - Press esc to pause the game.
 
+## Simple Docs
+
+Just for information, the main cpp file is SnakeGame.cpp is used to create and run the game.
+
 > Note: This game only available and running on Linux :)
 
 <i>© Billy Franscois</i>
