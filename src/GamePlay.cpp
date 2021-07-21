@@ -19,7 +19,7 @@ GamePlay::~GamePlay()
 
 void GamePlay::Init()
 {
-     //Load assets
+     //Load assets texture
      mContext->mAssets->addTexture(GRASS, "assets/textures/grass/background_green.png", true);
      mContext->mAssets->addTexture(FOOD, "assets/textures/food/food.png");
      mContext->mAssets->addTexture(WALL, "assets/textures/wall/wall.png", true);
@@ -55,7 +55,7 @@ void GamePlay::Init()
      //Score
      mContext->mAssets->addFont(SCORE_FONT, "assets/fonts/Roboto-Bold.ttf");
      mScoreText.setFont(mContext->mAssets->getFont(SCORE_FONT));
-     mScoreText.setString(("   Score Game") + (mScore));
+     //mScoreText.setString(("   Score Game") + (mScore));
      mScoreText.setCharacterSize(16);
 }
 
