@@ -10,7 +10,7 @@
 GamePlay::GamePlay(std::shared_ptr<Context> context) : mContext(context), mSnakeDirection(16.f, 0.f), mElapsedTime(sf::Time::Zero), isPaused(false)
 {
      mScore = 0;
-     srand(time(nullptr));
+     std::srand(time(nullptr));
 }
 
 GamePlay::~GamePlay()
