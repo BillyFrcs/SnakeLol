@@ -13,7 +13,7 @@ PauseGame::~PauseGame()
 void PauseGame::Init()
 {
      //Pause game title
-     mPauseGameTitle.setFont(mContext->mAssets->getFont(MAIN_FONT));
+     mPauseGameTitle.setFont(mContext->mAssets->getFont(AssetsID::E_Main_Font));
      mPauseGameTitle.setString("Pause Game");
      mPauseGameTitle.setOrigin(mPauseGameTitle.getLocalBounds().width / 2, mPauseGameTitle.getLocalBounds().height / 2);
      mPauseGameTitle.setPosition(mContext->mWindow->getSize().x / 2, mContext->mWindow->getSize().y / 2);

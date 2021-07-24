@@ -1,7 +1,7 @@
 #include <SFML/Window/Event.hpp>
 
-#include "MainMenu.hpp"
 #include "GamePlay.hpp"
+#include "MainMenu.hpp"
 
 MainMenu::MainMenu(std::shared_ptr<Context> &context) : mContext(context), playButtonSelected(), playButtonPressed(), exitButtonSelected(), exitButtonPressed()
 {
@@ -13,23 +13,23 @@ MainMenu::~MainMenu()
 
 void MainMenu::Init()
 {
-     mContext->mAssets->addFont(MAIN_FONT, "assets/fonts/MaldiniBold.ttf");
+     mContext->mAssets->addFont(AssetsID::E_Main_Font, "assets/fonts/MaldiniBold.ttf");
 
      //Game title
-     mGameTitle.setFont(mContext->mAssets->getFont(MAIN_FONT));
+     mGameTitle.setFont(mContext->mAssets->getFont(AssetsID::E_Main_Font));
      mGameTitle.setString("2D Snake Game");
      mGameTitle.setOrigin(mGameTitle.getLocalBounds().width / 2, mGameTitle.getLocalBounds().height / 2);
      mGameTitle.setPosition(mContext->mWindow->getSize().x / 2, mContext->mWindow->getSize().y / 2 - 150.f);
 
      //Play game button
-     mGamePlayButton.setFont(mContext->mAssets->getFont(MAIN_FONT));
+     mGamePlayButton.setFont(mContext->mAssets->getFont(AssetsID::E_Main_Font));
      mGamePlayButton.setString("Play");
      mGamePlayButton.setOrigin(mGameTitle.getLocalBounds().width / 2, mGameTitle.getLocalBounds().height / 2);
      mGamePlayButton.setPosition(mContext->mWindow->getSize().x / 2, mContext->mWindow->getSize().y / 2 - 30.f);
      mGamePlayButton.setCharacterSize(40);
 
      //Exit game button
-     mGameExitButton.setFont(mContext->mAssets->getFont(MAIN_FONT));
+     mGameExitButton.setFont(mContext->mAssets->getFont(AssetsID::E_Main_Font));
      mGameExitButton.setString("Exit");
      mGameExitButton.setOrigin(mGameTitle.getLocalBounds().width / 2, mGameTitle.getLocalBounds().height / 2);
      mGameExitButton.setPosition(mContext->mWindow->getSize().x / 2, mContext->mWindow->getSize().y / 2 + 20.f);

@@ -13,23 +13,23 @@ GameOver::~GameOver()
 
 void GameOver::Init()
 {
-     mContext->mAssets->addFont(MAIN_FONT, "assets/fonts/MaldiniBold.ttf");
+     mContext->mAssets->addFont(AssetsID::E_Main_Font, "assets/fonts/MaldiniBold.ttf");
 
-     //Game over 
-     mGameOverTitle.setFont(mContext->mAssets->getFont(MAIN_FONT));
+     //Game over
+     mGameOverTitle.setFont(mContext->mAssets->getFont(AssetsID::E_Main_Font));
      mGameOverTitle.setString("Game Over");
      mGameOverTitle.setOrigin(mGameOverTitle.getLocalBounds().width / 2, mGameOverTitle.getLocalBounds().height / 2);
      mGameOverTitle.setPosition(mContext->mWindow->getSize().x / 2, mContext->mWindow->getSize().y / 2 - 150.f);
 
      //Retry game
-     mGameRetryButton.setFont(mContext->mAssets->getFont(MAIN_FONT));
+     mGameRetryButton.setFont(mContext->mAssets->getFont(AssetsID::E_Main_Font));
      mGameRetryButton.setString("Retry");
      mGameRetryButton.setOrigin(mGameOverTitle.getLocalBounds().width / 2, mGameOverTitle.getLocalBounds().height / 2);
      mGameRetryButton.setPosition(mContext->mWindow->getSize().x / 2, mContext->mWindow->getSize().y / 2 - 30.f);
      mGameRetryButton.setCharacterSize(40);
 
      //Exit game
-     mGameExitButton.setFont(mContext->mAssets->getFont(MAIN_FONT));
+     mGameExitButton.setFont(mContext->mAssets->getFont(AssetsID::E_Main_Font));
      mGameExitButton.setString("Exit");
      mGameExitButton.setOrigin(mGameOverTitle.getLocalBounds().width / 2, mGameOverTitle.getLocalBounds().height / 2);
      mGameExitButton.setPosition(mContext->mWindow->getSize().x / 2, mContext->mWindow->getSize().y / 2 + 20.f);

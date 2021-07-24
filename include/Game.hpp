@@ -9,12 +9,12 @@
 
 enum AssetsID
 {
-    MAIN_FONT = 0,
-    SCORE_FONT = 0,
-    GRASS,
-    FOOD,
-    WALL,
-    SNAKE,
+    E_Main_Font = 0,
+    E_Score_Font = 0,
+    E_Wall,
+    E_Food,
+    E_Grass,
+    E_Snake,
 };
 
 class Context

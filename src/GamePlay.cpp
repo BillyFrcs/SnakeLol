@@ -20,19 +20,19 @@ GamePlay::~GamePlay()
 void GamePlay::Init()
 {
      //Load assets texture
-     mContext->mAssets->addTexture(GRASS, "assets/textures/grass/background_green.png", true);
-     mContext->mAssets->addTexture(FOOD, "assets/textures/food/food.png");
-     mContext->mAssets->addTexture(WALL, "assets/textures/wall/wall.png", true);
-     mContext->mAssets->addTexture(SNAKE, "assets/textures/snake/snake.png");
+     mContext->mAssets->addTexture(AssetsID::E_Grass, "assets/textures/grass/background_green.png", true);
+     mContext->mAssets->addTexture(AssetsID::E_Food, "assets/textures/food/food.png");
+     mContext->mAssets->addTexture(AssetsID::E_Wall, "assets/textures/wall/wall.png", true);
+     mContext->mAssets->addTexture(AssetsID::E_Snake, "assets/textures/snake/snake.png");
 
      //Background grass
-     mGrass.setTexture(mContext->mAssets->getTexture(GRASS));
+     mGrass.setTexture(mContext->mAssets->getTexture(AssetsID::E_Grass));
      mGrass.setTextureRect(mContext->mWindow->getViewport(mContext->mWindow->getDefaultView()));
 
      //Wall
      for (auto &wall : mWalls)
      {
-          wall.setTexture(mContext->mAssets->getTexture(WALL));
+          wall.setTexture(mContext->mAssets->getTexture(AssetsID::E_Wall));
      }
 
      //x wall position
@@ -46,15 +46,15 @@ void GamePlay::Init()
      mWalls[3].setPosition(mContext->mWindow->getSize().x - 16, 0);
 
      //Food
-     mFood.setTexture(mContext->mAssets->getTexture(FOOD));
+     mFood.setTexture(mContext->mAssets->getTexture(E_Food));
      mFood.setPosition(mContext->mWindow->getSize().x / 2, mContext->mWindow->getSize().y / 2);
 
      //Snake
-     mSnake.Init(mContext->mAssets->getTexture(SNAKE));
+     mSnake.Init(mContext->mAssets->getTexture(E_Snake));
 
      //Score
-     mContext->mAssets->addFont(SCORE_FONT, "assets/fonts/Roboto-Bold.ttf");
-     mScoreText.setFont(mContext->mAssets->getFont(SCORE_FONT));
+     mContext->mAssets->addFont(E_Score_Font, "assets/fonts/Roboto-Bold.ttf");
+     mScoreText.setFont(mContext->mAssets->getFont(E_Score_Font));
      //mScoreText.setString(("   Score Game") + (mScore));
      mScoreText.setCharacterSize(16);
 }
