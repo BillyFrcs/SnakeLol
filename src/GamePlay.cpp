@@ -20,13 +20,13 @@ GamePlay::~GamePlay()
 void GamePlay::Init()
 {
      //Load assets texture
-     mContext->mAssets->addTexture(AssetsID::E_Grass, "assets/textures/grass/background_green.png", true);
+     mContext->mAssets->addTexture(AssetsID::E_Background, "assets/textures/background/background_green.png", true);
      mContext->mAssets->addTexture(AssetsID::E_Food, "assets/textures/food/food.png");
      mContext->mAssets->addTexture(AssetsID::E_Wall, "assets/textures/wall/wall.png", true);
      mContext->mAssets->addTexture(AssetsID::E_Snake, "assets/textures/snake/snake.png");
 
      //Background grass
-     mGrass.setTexture(mContext->mAssets->getTexture(AssetsID::E_Grass));
+     mGrass.setTexture(mContext->mAssets->getTexture(AssetsID::E_Background));
      mGrass.setTextureRect(mContext->mWindow->getViewport(mContext->mWindow->getDefaultView()));
 
      //Wall

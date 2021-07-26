@@ -13,7 +13,7 @@ enum AssetsID
     E_Score_Font = 0,
     E_Wall,
     E_Food,
-    E_Grass,
+    E_Background,
     E_Snake,
 };
 
