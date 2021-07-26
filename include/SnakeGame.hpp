@@ -8,6 +8,6 @@ namespace SnakeGame
      {
           Game *game = new Game();
 
-          game->runGame();
+          game->RunGame();
      }
 }

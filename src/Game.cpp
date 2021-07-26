@@ -8,7 +8,7 @@
 
 Game::Game() : mContext(std::make_shared<Context>())
 {
-     //render the snake game
+     //Render the snake game
      mContext->mWindow->create(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "Snake Game", sf::Style::Close);
 
      //Add the first state to mState here
@@ -20,7 +20,7 @@ Game::~Game()
 }
 
 //Display and run the game
-void Game::runGame()
+void Game::RunGame()
 {
      sf::CircleShape shape(100.f);
      shape.setFillColor(sf::Color::Magenta);
@@ -32,14 +32,13 @@ void Game::runGame()
      {
           timeSinceLastFrame += clock.restart();
 
-          while (timeSinceLastFrame > TIME_PER_FRAME)
+          while (timeSinceLastFrame > _timePerFrame)
           {
-               (timeSinceLastFrame -= TIME_PER_FRAME);
+               (timeSinceLastFrame -= _timePerFrame);
 
-               //Tasks
                mContext->mStates->processStateChange();
                mContext->mStates->getCurrent()->ProcessInput();
-               mContext->mStates->getCurrent()->Update(TIME_PER_FRAME);
+               mContext->mStates->getCurrent()->Update(_timePerFrame);
                mContext->mStates->getCurrent()->Draw();
           }
      }
