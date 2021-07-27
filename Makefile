@@ -7,7 +7,7 @@ INCLUDE	:= include
 LIB		:= lib
 
 #Get the SFML library and paste here.
-LIBRARIES	:= -lsfml-graphics -lsfml-window -lsfml-system
+LIBRARIES	:= -lsfml-graphics -lsfml-window -lsfml-audio -lsfml-system
 EXECUTABLE	:= SnakeGame #This is the file executable when running the game
 
 all: $(BIN)/$(EXECUTABLE)
