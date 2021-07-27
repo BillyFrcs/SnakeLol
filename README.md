@@ -16,7 +16,7 @@ git clone https://github.com/BillyFrcs/SnakeGame.git
 
 - Create "bin" folder without quotation marks, then open new terminal on text editor or IDE.
 - Just type `make` on terminal, then type `bin/SnakeGame` to compiled all source code, and you can also Run and Debug(f5) or Build & Run(f7).
-- Make sure to already download or installed SFML on your OS, follow the setup and installation from [here](https://www.sfml-dev.org/tutorials/2.5/start-linux.php).
+- Make sure to already download or installed SFML and C++ compiler on your OS, follow the setup and installation from [here](https://www.sfml-dev.org/tutorials/2.5/start-linux.php).
 
 Copy and paste the syntax below on your terminal to install SFML library if you're using debian or ubuntu based system.
 
