@@ -4,7 +4,7 @@
 
 Simple 2D Snake Game made with C++/SFML library framework.
 
-## Getting started
+## Getting Started
 
 Clone or download this repository, and open in your favorite IDE or text editor (Recommended using Visual studio code).
 
@@ -12,7 +12,7 @@ Clone or download this repository, and open in your favorite IDE or text editor 
 git clone https://github.com/BillyFrcs/SnakeGame.git
 ```
 
-## Run and play snake game
+## Run And Play Snake Game
 
 - Create "bin" folder without quotation marks, then open new terminal on text editor or IDE.
 - Just type `make` on terminal, then type `bin/SnakeGame` to compiled all source code, and you can also Run and Debug(f5) or Build & Run(f7).
@@ -24,7 +24,7 @@ Copy and paste the syntax below on your terminal to install SFML library if you'
 sudo apt-get install libsfml-dev
 ```
 
-## Instructions game
+## Instructions Game
 
 - Press arrow key to move the snake or you can also use W, A, S, D.
 
