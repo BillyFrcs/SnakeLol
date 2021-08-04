@@ -30,6 +30,4 @@ sudo apt-get install libsfml-dev
 
 - Press esc to pause the game.
 
-> Note: This game only available and running on Linux 😃 but if you want to running on Windows or MacOS, you can do it, just follow this [tutorial](https://www.sfml-dev.org/tutorials/2.5/).
-
 <i>© Billy Franscois</i>
