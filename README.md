@@ -1,4 +1,4 @@
-# Snake Game
+<h1>Snake Game</h1>
 
 ![Snake Game](https://github.com/BillyFrcs/SnakeGame/blob/master/assets/example/SnakeGameSample.png)
 
