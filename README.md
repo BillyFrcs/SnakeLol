@@ -16,12 +16,14 @@ git clone https://github.com/BillyFrcs/SnakeGame.git
 
 - Just type "ctrl + shift + b" to build and run the game.
 - Choose option to Debug or Release.
-- Please check this [Template](https://github.com/BillyFrcs/SnakeGame/tree/master/Template) for more details and setup the project.
+- Please check this [Template](https://github.com/BillyFrcs/SnakeGame/tree/master/Template) for more details and setup this project.
 
 ## Instructions Game
 
 - Press arrow key to move the snake or you can also use W, A, S, D.
 
 - Press esc to pause the game.
+
+> Get the [SFML Template](https://github.com/andrew-r-king/sfml-vscode-boilerplate) for making game from scratch using Visual Studio Code.
 
 <i>© Billy Franscois</i>
