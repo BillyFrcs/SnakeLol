@@ -4,7 +4,7 @@
 int main(void)
 {
 #if defined(_DEBUG)
-	std::cout << "Billy Snake Game" << std::endl;
+	std::cout << "Billy Games | Snake" << std::endl;
 #endif
 
 	Game* SnakeGame = new Game();
