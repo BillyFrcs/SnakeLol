@@ -1,53 +1,49 @@
 {
-  "files.associations": {
-    "*.tpp": "cpp",
-    "array": "cpp",
-    "atomic": "cpp",
-    "*.tcc": "cpp",
-    "cctype": "cpp",
-    "clocale": "cpp",
-    "cmath": "cpp",
-    "cstdarg": "cpp",
-    "cstddef": "cpp",
-    "cstdint": "cpp",
-    "cstdio": "cpp",
-    "cstdlib": "cpp",
-    "ctime": "cpp",
-    "cwchar": "cpp",
-    "cwctype": "cpp",
-    "deque": "cpp",
-    "unordered_map": "cpp",
-    "vector": "cpp",
-    "exception": "cpp",
-    "algorithm": "cpp",
-    "iterator": "cpp",
-    "map": "cpp",
-    "memory": "cpp",
-    "memory_resource": "cpp",
-    "optional": "cpp",
-    "string": "cpp",
-    "string_view": "cpp",
-    "system_error": "cpp",
-    "tuple": "cpp",
-    "type_traits": "cpp",
-    "utility": "cpp",
-    "fstream": "cpp",
-    "initializer_list": "cpp",
-    "iosfwd": "cpp",
-    "iostream": "cpp",
-    "istream": "cpp",
-    "limits": "cpp",
-    "new": "cpp",
-    "ostream": "cpp",
-    "sstream": "cpp",
-    "stdexcept": "cpp",
-    "streambuf": "cpp",
-    "typeinfo": "cpp",
-    "list": "cpp",
-    "cstring": "cpp",
-    "functional": "cpp",
-    "set": "cpp",
-    "iomanip": "cpp",
-    "cinttypes": "cpp"
-  }
+	"C_Cpp.autocomplete": "Default",
+	"C_Cpp.intelliSenseEngine": "Default",
+	"C_Cpp.preferredPathSeparator": "Forward Slash",
+	"C_Cpp.workspaceParsingPriority": "highest",
+	"C_Cpp.enhancedColorization": "Disabled",
+	"debug.toolBarLocation": "docked",
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false,
+	"editor.formatOnSave": true,
+	"files.encoding": "utf8",
+	"files.trimTrailingWhitespace": true,
+	"files.eol": "\n",
+	"files.exclude": {
+		// "Makefile": true,
+		// "build.sh": true,
+		"gmon.out": true,
+		// "bin/": true,
+		// "build/": true,
+		"**/*.7z": true,
+		"**/*.rar": true,
+		"**/Thumbs.db": true
+	},
+	"files.associations": {
+		"*.json": "jsonc",
+		"*.stats": "cpp",
+		"*.desktop": "properties",
+		".clang-format": "yaml"
+	},
+	"terminal.integrated.automationShell.windows": "C:/Program Files/Git/bin/bash.exe",
+	"terminal.integrated.env.windows": {
+		"Path": "C:/mingw32/bin;C:/SFML-2.5.1/bin"
+	},
+	"terminal.integrated.env.linux": {
+		"PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+	},
+	"terminal.integrated.env.osx": {
+		"PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+	},
+	"workbench.colorCustomizations": {
+		"statusBar.background": "#8ac242",
+		"statusBar.foreground": "#ffffff",
+		"statusBar.debuggingBackground": "#5e9517",
+		"statusBar.debuggingForeground": "#ffffff",
+	},
+	"[applescript]": {
+		"files.encoding": "utf8"
+	}
 }
