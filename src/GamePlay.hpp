@@ -1,45 +1,49 @@
 #pragma once
 
-#include <SFML/Graphics/Sprite.hpp>
-#include <SFML/Graphics/Text.hpp>
+#ifndef GAME_PLAY_HPP
 
-#include <array>
-#include <memory>
+	#include <SFML/Graphics/Sprite.hpp>
+	#include <SFML/Graphics/Text.hpp>
 
-#include "Game.hpp"
-#include "State.hpp"
-#include "Snake.hpp"
+	#include <array>
+	#include <memory>
+
+	#include "Game.hpp"
+	#include "Snake.hpp"
+	#include "State.hpp"
 
 class GamePlay : public Engine::State
 {
 private:
-    std::shared_ptr<Context> mContext;
-    sf::Sprite mGrass;
-    sf::Sprite mFood;
-    std::array<sf::Sprite, 4> mWalls;
+	std::shared_ptr<Context> mContext;
+	sf::Sprite mGrass;
+	sf::Sprite mFood;
+	std::array<sf::Sprite, 4> mWalls;
 
-    //Added snake
-    Snake mSnake;
+	//Added snake
+	Snake mSnake;
 
-    //Add score
-    sf::Text mScoreText;
-    int mScore;
+	//Add score
+	sf::Text mScoreText;
+	int mScore;
 
-    sf::Vector2f mSnakeDirection;
-    sf::Time mElapsedTime;
+	sf::Vector2f mSnakeDirection;
+	sf::Time mElapsedTime;
 
-    bool isPaused;
+	bool isPaused;
 
 public:
-    GamePlay(std::shared_ptr<Context> mContext);
-    ~GamePlay();
+	GamePlay(std::shared_ptr<Context> mContext);
+	~GamePlay();
 
-    void Init() override;
-    void ProcessInput() override;
-    void Update(sf::Time deltaTime) override;
-    void Draw() override;
+	void Init() override;
+	void ProcessInput() override;
+	void Update(sf::Time deltaTime) override;
+	void Draw() override;
 
-    //Method
-    void Pause() override;
-    void Start() override;
+	//Method
+	void Pause() override;
+	void Start() override;
 };
+
+#endif

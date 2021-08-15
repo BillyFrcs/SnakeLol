@@ -1,27 +1,31 @@
 #pragma once
 
-#include <memory>
-#include <stack>
+#ifndef STATE_MAN_HPP
 
-#include "State.hpp"
+	#include <memory>
+	#include <stack>
+
+	#include "State.hpp"
 
 namespace Engine
 {
-     class StateMan
-     {
-     private:
-          std::stack<std::unique_ptr<State>> mStateStack;
-          std::unique_ptr<State> mNewState;
+class StateMan
+{
+private:
+	std::stack<std::unique_ptr<State>> mStateStack;
+	std::unique_ptr<State> mNewState;
 
-          bool mAdd = false, mReplace = false, mRemove = false;
+	bool mAdd = false, mReplace = false, mRemove = false;
 
-     public:
-          StateMan();
-          ~StateMan();
+public:
+	StateMan();
+	~StateMan();
 
-          void Add(std::unique_ptr<State> toAdd, bool Replace = false);
-          void popCurrent();
-          void processStateChange();
-          std::unique_ptr<State> &getCurrent();
-     };
+	void Add(std::unique_ptr<State> toAdd, bool Replace = false);
+	void popCurrent();
+	void processStateChange();
+	std::unique_ptr<State>& getCurrent();
+};
 } //Namespace Engine
+
+#endif

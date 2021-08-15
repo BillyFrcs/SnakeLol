@@ -1,11 +1,13 @@
 #pragma once
 
-#include <SFML/Graphics/RenderWindow.hpp>
+#ifndef GAME_HPP
 
-#include <memory>
+	#include <SFML/Graphics/RenderWindow.hpp>
 
-#include "AssetsMan.hpp"
-#include "StateMan.hpp"
+	#include <memory>
+
+	#include "AssetsMan.hpp"
+	#include "StateMan.hpp"
 
 enum AssetsID
 {
@@ -44,3 +46,5 @@ public:
 
 	void RunGame();
 };
+
+#endif
