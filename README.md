@@ -16,9 +16,9 @@ git clone https://github.com/BillyFrcs/SnakeGame.git
 
 - Just type "ctrl + shift + b" to build and run the game.
 - Choose option to Debug or Release.
-- Please check this [Template](https://github.com/BillyFrcs/SnakeGame/tree/master/Template) for more details and setup this project.
+- Please check this [Template](https://github.com/BillyFrcs/SnakeGame/tree/master/Template/README.md) for more details and setup this project.
 
-## Instructions Game
+## Instruction Game
 
 - Press arrow key to move the snake or you can also use W, A, S, D.
 
