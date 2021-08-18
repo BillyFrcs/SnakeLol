@@ -2,6 +2,8 @@
 
 ![Snake Game](https://github.com/BillyFrcs/SnakeGame/blob/master/assets/example/SnakeGameSample.png)
 
+![Snake Game](https://github.com/BillyFrcs/SnakeGame/blob/master/assets/example/Snake.png)
+
 Simple 2D Snake Game made with C++ and [SFML](https://www.sfml-dev.org/index.php) library framework.
 
 ## Getting Started
