@@ -1,8 +1,10 @@
 <h1>Snake Game</h1>
 
-![Snake Game](https://github.com/BillyFrcs/SnakeGame/blob/master/assets/example/SnakeGameSample.png)
-
 ![Snake Game](https://github.com/BillyFrcs/SnakeGame/blob/master/assets/example/Snake.png)
+
+<!--
+![Snake Game](https://github.com/BillyFrcs/SnakeGame/blob/master/assets/example/SnakeGameSample.png)
+-->
 
 Simple 2D Snake Game made with C++ and [SFML](https://www.sfml-dev.org/index.php) library framework.
 
