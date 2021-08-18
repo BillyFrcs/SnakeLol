@@ -6,7 +6,7 @@ Simple 2D Snake Game made with C++ and [SFML](https://www.sfml-dev.org/index.php
 
 ## Getting Started
 
-Clone or download this repository, and then open in Visual studio code.
+Clone or download this repository, and then open in Visual Studio Code.
 
 ```
 git clone https://github.com/BillyFrcs/SnakeGame.git
