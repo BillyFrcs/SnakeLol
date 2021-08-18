@@ -1,6 +1,7 @@
 #pragma once
 
 #ifndef GAME_PLAY_HPP
+	#define GAME_PLAY_HPP
 
 	#include <SFML/Graphics/Sprite.hpp>
 	#include <SFML/Graphics/Text.hpp>
@@ -46,4 +47,4 @@ public:
 	void Start() override;
 };
 
-#endif
+#endif // GAME_PLAY_HPP

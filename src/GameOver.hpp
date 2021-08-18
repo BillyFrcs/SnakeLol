@@ -1,6 +1,7 @@
 #pragma once
 
 #ifndef GAME_OVER_HPP
+	#define GAME_OVER_HPP
 
 	#include <SFML/Graphics/Text.hpp>
 
@@ -28,4 +29,4 @@ public:
 	void Draw() override;
 };
 
-#endif
+#endif // GAME_OVER_HPP

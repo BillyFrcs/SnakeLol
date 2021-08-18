@@ -1,6 +1,7 @@
 #pragma once
 
 #ifndef SNAKE_HPP
+	#define SNAKE_HPP
 
 	#include <SFML/Graphics/Drawable.hpp>
 	#include <SFML/Graphics/RenderStates.hpp>
@@ -31,4 +32,4 @@ public:
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 };
 
-#endif
+#endif // SNAKE_HPP

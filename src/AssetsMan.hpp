@@ -1,6 +1,7 @@
 #pragma once
 
 #ifndef ASSETSMAN_HPP
+	#define ASSETSMAN_HPP
 
 	#include <SFML/Graphics/Font.hpp>
 	#include <SFML/Graphics/Texture.hpp>
@@ -29,4 +30,4 @@ public:
 };
 } //Namespace Engine
 
-#endif
+#endif // ASSETSMAN_HPP

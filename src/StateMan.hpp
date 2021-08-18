@@ -1,6 +1,7 @@
 #pragma once
 
 #ifndef STATE_MAN_HPP
+	#define STATE_MAN_HPP
 
 	#include <memory>
 	#include <stack>
@@ -28,4 +29,4 @@ public:
 };
 } //Namespace Engine
 
-#endif
+#endif // STATE_MAN_HPP

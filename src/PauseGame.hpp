@@ -1,6 +1,7 @@
 #pragma once
 
 #ifndef PAUSE_GAME_HPP
+	#define PAUSE_GAME_HPP
 
 	#include <SFML/Graphics/Text.hpp>
 
@@ -25,4 +26,4 @@ public:
 	void Draw() override;
 };
 
-#endif
+#endif // PAUSE_GAME_HPP

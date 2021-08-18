@@ -1,6 +1,7 @@
 #pragma once
 
 #ifndef MAIN_MENU_HPP
+	#define MAIN_MENU_HPP
 
 	#include <SFML/Graphics/Text.hpp>
 
@@ -28,4 +29,4 @@ public:
 	void Draw() override; //Same as zero
 };
 
-#endif
+#endif // MAIN_MENU_HPP
