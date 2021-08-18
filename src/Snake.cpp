@@ -2,78 +2,80 @@
 
 #define SNAKE 2
 
-Snake::Snake() : mBody(std::list<sf::Sprite>(SNAKE))
+Snake::Snake() :
+	mBody(std::list<sf::Sprite>(SNAKE))
 {
-     mHead = --mBody.end();
-     mTail = mBody.begin();
+	mHead = --mBody.end();
+	mTail = mBody.begin();
 }
 
 Snake::~Snake()
 {
 }
 
-void Snake::Init(const sf::Texture &texture)
+void Snake::Init(const sf::Texture& texture)
 {
-     float value = 16.f;
-     for (auto &piece : mBody)
-     {
-          piece.setTexture(texture);
-          piece.setPosition({value, 16.f});
-          value += 16.f;
-     }
+	float value = 16.f;
+	for (auto& piece : mBody)
+	{
+		piece.setTexture(texture);
+		piece.setPosition({ value, 16.f });
+		piece.setColor(sf::Color::Green);
+		value += 16.f;
+	}
 }
 
-void Snake::Move(const sf::Vector2f &direction)
+void Snake::Move(const sf::Vector2f& direction)
 {
-     mTail->setPosition(mHead->getPosition() + direction);
-     mHead = mTail++;
-     //mTail++;
+	mTail->setPosition(mHead->getPosition() + direction);
+	mHead = mTail++;
+	//mTail++;
 
-     if (mTail == mBody.end())
-     {
-          mTail = mBody.begin();
-     }
+	if (mTail == mBody.end())
+	{
+		mTail = mBody.begin();
+	}
 }
 
-bool Snake::isOn(const sf::Sprite &other) const
+bool Snake::isOn(const sf::Sprite& other) const
 {
-     return other.getGlobalBounds().intersects(mHead->getGlobalBounds());
+	return other.getGlobalBounds().intersects(mHead->getGlobalBounds());
 }
 
-bool Snake::isSelfIntersecting(bool &isFlag) const
+bool Snake::isSelfIntersecting(bool& isFlag) const
 {
-     isFlag = true;
+	isFlag = true;
 
-     for (auto piece = mBody.begin(); piece != mBody.end(); piece++)
-     {
-          if (mHead != piece)
-          {
-               isFlag = isOn(*piece);
+	for (auto piece = mBody.begin(); piece != mBody.end(); piece++)
+	{
+		if (mHead != piece)
+		{
+			isFlag = isOn(*piece);
 
-               if (isFlag)
-               {
-                    break;
-               }
-          }
-     }
+			if (isFlag)
+			{
+				break;
+			}
+		}
+	}
 
-     return isFlag;
+	return isFlag;
 }
 
-void Snake::Grow(const sf::Vector2f &direction)
+void Snake::Grow(const sf::Vector2f& direction)
 {
-     sf::Sprite newPiece;
+	sf::Sprite newPiece;
 
-     newPiece.setTexture(*(mBody.begin()->getTexture()));
-     newPiece.setPosition(mHead->getPosition() + direction);
+	newPiece.setTexture(*(mBody.begin()->getTexture()));
+	newPiece.setPosition(mHead->getPosition() + direction);
 
-     mHead = mBody.insert(mHead++, newPiece);
+	mHead = mBody.insert(mHead++, newPiece);
 }
 
-void Snake::draw(sf::RenderTarget &target, sf::RenderStates states) const
+void Snake::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {
-     for (auto &piece : mBody)
-     {
-          target.draw(piece, states);
-     }
+	for (auto& piece : mBody)
+	{
+		target.draw(piece, states);
+	}
 }
