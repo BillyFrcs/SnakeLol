@@ -25,7 +25,7 @@ void GamePlay::Init()
 {
 	//Load assets texture
 	mContext->mAssets->addTexture(AssetsID::E_Background, "assets/textures/background/background_green.png", true);
-	mContext->mAssets->addTexture(AssetsID::E_Food, "assets/textures/food/food.png");
+	mContext->mAssets->addTexture(AssetsID::E_Food, "assets/textures/food/apple.png");
 	mContext->mAssets->addTexture(AssetsID::E_Wall, "assets/textures/wall/wall.png", true);
 	mContext->mAssets->addTexture(AssetsID::E_Snake, "assets/textures/snake/snake.png");
 
@@ -187,10 +187,12 @@ void GamePlay::Draw()
 
 	mContext->mWindow->draw(mGrass);
 
+	/*
 	for (auto& wall : mWalls)
 	{
 		mContext->mWindow->draw(wall);
 	}
+	*/
 
 	mContext->mWindow->draw(mFood);
 	mContext->mWindow->draw(mSnake);

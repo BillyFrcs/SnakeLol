@@ -2,10 +2,9 @@
 
 #include "Game.hpp"
 #include "MainMenu.hpp"
-#include "Platform/Platform.hpp"
 
 #define SCREEN_WIDTH 700
-#define SCREEN_HEIGHT 400
+#define SCREEN_HEIGHT 500
 
 Game::Game() :
 	mContext(std::make_shared<Context>())
@@ -14,6 +13,7 @@ Game::Game() :
 	mContext->mWindow->create(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "Snake Game", sf::Style::Close);
 
 	util::Platform platform;
+
 	platform.setIcon(mContext->mWindow->getSystemHandle());
 
 	// Go to main menu state
@@ -28,6 +28,7 @@ Game::~Game()
 void Game::RunGame()
 {
 	sf::Clock clock;
+
 	sf::Time timeSinceLastFrame = sf::Time::Zero;
 
 	while (mContext->mWindow->isOpen())

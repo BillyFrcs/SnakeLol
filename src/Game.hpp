@@ -7,6 +7,8 @@
 
 	#include <memory>
 
+	#include "Platform/Platform.hpp"
+
 	#include "AssetsMan.hpp"
 	#include "StateMan.hpp"
 

@@ -1,6 +1,6 @@
 #include "Snake.hpp"
 
-#define SNAKE 2
+#define SNAKE 4
 
 Snake::Snake() :
 	mBody(std::list<sf::Sprite>(SNAKE))
@@ -16,11 +16,14 @@ Snake::~Snake()
 void Snake::Init(const sf::Texture& texture)
 {
 	float value = 16.f;
+
 	for (auto& piece : mBody)
 	{
 		piece.setTexture(texture);
 		piece.setPosition({ value, 16.f });
-		piece.setColor(sf::Color::Green);
+		// piece.setColor(sf::Color::Green);
+		piece.scale(1.0f, 1.0f);
+
 		value += 16.f;
 	}
 }
