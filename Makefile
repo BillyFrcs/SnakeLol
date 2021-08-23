@@ -187,7 +187,6 @@ _PCH_COMPILER_EXT := $(if $(filter osx,$(PLATFORM)),p,g)ch
 
 _SYMBOLS := $(if $(filter osx,$(PLATFORM)),,$(if $(filter Release,$(BUILD)),-s,))
 
-
 _PCH := $(_PCH_HFILE:%=$(OBJ_DIR)/%)
 ifneq ($(_PCH),)
 	_PCH_GCH := $(_PCH).$(_PCH_COMPILER_EXT)
