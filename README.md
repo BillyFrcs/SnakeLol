@@ -2,11 +2,7 @@
 
 ![Snake Game](https://github.com/BillyFrcs/SnakeGame/blob/master/assets/example/Snake.png)
 
-<!--
-![Snake Game](https://github.com/BillyFrcs/SnakeGame/blob/master/assets/example/SnakeGameSample.png)
--->
-
-Simple 2D Snake Game made with C++ and [SFML](https://www.sfml-dev.org/index.php) library framework.
+Simple 2D Snake Game made with C++ and [SFML](https://www.sfml-dev.org/index.php) library.
 
 ## Getting Started
 
@@ -24,9 +20,3 @@ git clone https://github.com/BillyFrcs/SnakeGame.git
 - Please check this [README](https://github.com/BillyFrcs/SnakeGame/blob/master/Template/README.md) for more details to setup and configuration this project.
 
 > Get the [SFML Template](https://github.com/andrew-r-king/sfml-vscode-boilerplate) for making games from scratch using Visual Studio Code.
-
-## Instruction Game
-
-- Press arrow key to move the snake or you can also use W, A, S, D.
-
-- Press esc to pause the game.
