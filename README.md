@@ -17,6 +17,6 @@ git clone https://github.com/BillyFrcs/SnakeGame.git
 - Just press "ctrl + shift + B" to build and run the game.
 - Choose option to Debug or Release.
 - To build the game manually, just type `./build.sh` in the terminal. make sure that you're in the right project directory.
-- Please check this [README](https://github.com/BillyFrcs/SnakeGame/blob/master/Template/README.md) for more details to setup and configuration this project.
+- Please check this [DOCS](https://github.com/BillyFrcs/SnakeGame/blob/master/Template/README.md) for more details to setup and configuration this project.
 
 > Get the [SFML Template](https://github.com/andrew-r-king/sfml-vscode-boilerplate) for making games from scratch using Visual Studio Code.
