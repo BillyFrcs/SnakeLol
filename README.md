@@ -1,6 +1,6 @@
 <h1 align="center">Snake Lol</h1>
 
-![Snake Game](https://github.com/BillyFrcs/SnakeGame/blob/master/assets/example/Snake.png)
+![Snake Game](https://github.com/BillyFrcs/SnakeLol/blob/master/assets/example/Gif/SnakeLol.gif)
 
 Simple 2D Snake Game "Snake Lol" made from scratch using C++ and [SFML](https://www.sfml-dev.org/index.php) library.
 
