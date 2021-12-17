@@ -9,7 +9,7 @@ Simple 2D Snake Game "Snake Lol" made from scratch using C++ and [SFML](https://
 Clone or download this repository, and then open in Visual Studio Code.
 
 ```
-git clone https://github.com/BillyFrcs/SnakeGame.git
+git clone https://github.com/BillyFrcs/SnakeLol.git
 ```
 
 ## Build And Run
